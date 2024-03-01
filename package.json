@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@unocss/reset": "^0.58.5",
+    "sharp": "^0.33.2",
     "unocss": "^0.58.5"
   }
 }

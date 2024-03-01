@@ -1,5 +1,6 @@
 ---
-
+import {Image} from 'astro:assets'
+import uplneDementniQuartet from '@assets/uplne-dementni-quartet.png'
 ---
 
 <html lang="en">
@@ -10,7 +11,7 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Úplně Quartet</title>
 	</head>
-	<body class="min-h-screen flex flex-col justify-center items-center">
-		<h1 class="text-4xl font-serif font-bold">Úplně Quartet</h1>
+	<body>
+        <Image class="w-screen" src={uplneDementniQuartet} alt="Úplně Dementní Quartet" />
 	</body>
 </html>

@@ -1,6 +1,10 @@
 import { theme as defaultTheme } from 'unocss/preset-mini'
 
 export const unoConfigCommon = {
+	shortcuts: {
+		heading: 'text-4rem font-serif text-primary',
+		content: 'max-w-1280px mx-auto',
+	},
 	theme: {
 		colors: {
 			primary: '#623e2a',

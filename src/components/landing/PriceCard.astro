@@ -1,0 +1,22 @@
+---
+import { Image, type LocalImageProps, type RemoteImageProps } from 'astro:assets'
+
+interface Props {
+	title: string
+	description: string
+	image: LocalImageProps['src']
+	imageClass?: string
+}
+
+const { title, description, image, imageClass = '' } = Astro.props
+---
+
+<div class="grid row-span-2 grid-rows-subgrid gap-y-6">
+	<div>
+		<Image class={`${imageClass}`} src={image} alt="TODO" />
+	</div>
+	<div class="flex flex-col gap-4 justify-start p-8 border-1 border-primary">
+		<h1 class="text-3xl font-bold text-primary">{title}</h1>
+		<p class="text-lg text-primary">{description}</p>
+	</div>
+</div>

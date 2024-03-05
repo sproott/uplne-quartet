@@ -1,0 +1,32 @@
+---
+import PriceCard from '@components/landing/PriceCard.astro'
+import davidImage from '@assets/david.jpg'
+import stripeImage from '@assets/stripe.jpg'
+---
+
+<section class="min-h-screen bg-secondary py-16">
+	<div class="content flex flex-col justify-start items-center">
+		<h2 class="heading pb-10">Cos chcešs?</h2>
+		<div class="grid grid-rows-[auto_auto] grid-cols-3 gap-x-4 pb-8">
+			<PriceCard title="Hudba k obřadu" description="Zahrajeme Vám k obřadu" image={davidImage} />
+			<PriceCard
+				title="Dojedeme tam?"
+				description="List your offers, promos, or special membership privileges and perks here to entice people to book your property."
+				image={davidImage}
+			/>
+			<PriceCard
+				title="Úplně svatba?"
+				description="List your offers, promos, or special membership privileges and perks here to entice people to book your property."
+				image={davidImage}
+			/>
+		</div>
+		<div class="grid grid-rows-[auto_auto] w-full">
+			<PriceCard
+				title="Hudba k neobřadu"
+				description="List your offers, promos, or special membership privileges and perks here to entice people to book your property."
+				image={stripeImage}
+				imageClass="h-260px object-cover"
+			/>
+		</div>
+	</div>
+</section>

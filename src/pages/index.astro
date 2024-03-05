@@ -1,17 +1,43 @@
 ---
-import {Image} from 'astro:assets'
-import uplneDementniQuartet from '@assets/uplne-dementni-quartet.png'
+import { Image } from 'astro:assets'
+import heroImage from '@assets/hero.jpg'
+import logoImage from '@assets/logo.png'
+import PageHtml from '@components/PageHtml.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/png" href="/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Úplně Quartet</title>
-	</head>
-	<body>
-        <Image class="w-screen" src={uplneDementniQuartet} alt="Úplně Dementní Quartet" />
-	</body>
-</html>
+<PageHtml title="Úplně Quartet" description="TODO">
+	<main class="flex flex-col">
+		<section class="relative h-[calc(100vw*4000/6000)]">
+			<div
+				class="grid grid-rows-[12vw_1fr_12vw] place-items-center w-full h-[min(calc(100vw*4000/6000),100vh)] z-1"
+			>
+				<nav class="flex pl-20 pr-50 pt-10 justify-between h-full w-full">
+					<Image class="w-20 h-20" src={logoImage} loading="eager" alt="Úplně Quartet" />
+					<div class="text-2xl text-white uppercase">O nás</div>
+					<div class="text-2xl text-white uppercase">Galerie</div>
+					<div class="text-2xl text-white uppercase">Služby</div>
+					<div class="text-2xl text-white uppercase">Kontakt</div>
+				</nav>
+				<div class="flex flex-col justify-center items-center">
+					<p class="text-2xl text-white font-bold uppercase tracking-3">Welcome to</p>
+					<h1 class="text-10rem font-serif text-white leading-tight">Úplně Quartet</h1>
+				</div>
+				<div class="w-20 h-20 text-white i-ic:sharp-keyboard-double-arrow-down"></div>
+			</div>
+			<Image
+				class="absolute inset-0 w-full -z-1"
+				loading="eager"
+				width="1920"
+				src={heroImage}
+				alt="Úplně Quartet"
+			/>
+			<div class="absolute w-full h-full inset-0 bg-primary opacity-55 -z-1"></div>
+		</section>
+		<!-- <section class="grid grid-cols-[2fr_1fr] gap-30">
+			<div class="flex flex-col justify-center">
+				<h2 class="text-5xl font-serif">O nás</h2>
+				<p class="text-2xl"></p>
+			</div>
+		</section> -->
+	</main></PageHtml
+>

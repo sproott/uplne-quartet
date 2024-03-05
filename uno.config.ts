@@ -1,5 +1,6 @@
 import {
 	defineConfig,
+	presetIcons,
 	presetTypography,
 	presetWind,
 	transformerDirectives,
@@ -10,9 +11,6 @@ import { unoConfigCommon } from './uno.common'
 
 export default defineConfig({
 	...unoConfigCommon,
-	presets: [
-		presetWind(),
-		presetTypography(),
-	],
+	presets: [presetIcons(), presetWind(), presetTypography()],
 	transformers: [transformerVariantGroup(), transformerDirectives()],
 })

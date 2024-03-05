@@ -15,7 +15,10 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@iconify-json/ic": "^1.1.17",
     "@unocss/reset": "^0.58.5",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
     "sharp": "^0.33.2",
     "unocss": "^0.58.5"
   }

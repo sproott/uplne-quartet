@@ -14,9 +14,9 @@ const { title, description, image, imageClass = '', imageWidth = 640 } = Astro.p
 
 <div class="grid row-span-2 grid-rows-subgrid gap-y-6">
 	<div>
-		<Image width={imageWidth} class={`${imageClass}`} src={image} alt="TODO" />
+		<Image width={imageWidth} class={`rounded-md ${imageClass}`} src={image} alt="TODO" />
 	</div>
-	<div class="flex flex-col gap-4 justify-start p-8 border-1 border-primary">
+	<div class="box flex flex-col gap-4 justify-start p-8">
 		<h1 class="text-3xl font-bold text-primary">{title}</h1>
 		<p class="text-lg text-primary">{description}</p>
 	</div>

@@ -4,6 +4,7 @@ export const unoConfigCommon = {
 	shortcuts: {
 		heading: 'text-4rem font-serif text-primary',
 		content: 'max-w-1280px mx-auto',
+		box: 'border-primary border-1 rounded-md',
 	},
 	theme: {
 		colors: {

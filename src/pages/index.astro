@@ -14,7 +14,7 @@ import PricingSection from '@components/landing/PricingSection.astro'
 				class="grid grid-rows-[12vw_1fr_12vw] place-items-center h-[min(calc(100vw*4000/6000),100vh)] z-1"
 			>
 				<nav
-					class="flex pl-5 lg:pl-20 pr-50 pt-10 justify-between h-full w-full [&>div]-hidden lg:[&>div]-block"
+					class="flex justify-between items-start h-full w-full pl-5 lg:pl-20 pr-50 pt-10 [&>div]-hidden lg:[&>div]-block"
 				>
 					<Image
 						class="w-14 h-14 lg:w-20 lg:h-20"
@@ -22,20 +22,20 @@ import PricingSection from '@components/landing/PricingSection.astro'
 						loading="eager"
 						alt="Úplně Quartet"
 					/>
-					<div class="text-2xl text-white uppercase">O nás</div>
+					<a href="#about" class="text-2xl text-white uppercase">O nás</a>
 					<div class="text-2xl text-white uppercase">Galerie</div>
 					<div class="text-2xl text-white uppercase">Služby</div>
 					<div class="text-2xl text-white uppercase">Kontakt</div>
 				</nav>
 				<div
-					class="text-2rem sm:text-4rem md:text-6rem lg:text-8rem xl:text-10rem flex flex-col justify-center items-center"
+					class="text-2rem sm:text-4rem md:text-6rem lg:text-8rem xl:text-10rem flex flex-col justify-center items-center select-none"
 				>
 					<p class="hidden md:block text-0.2em text-white font-bold uppercase tracking-3">
 						Welcome to
 					</p>
 					<h1 class="text-1em font-serif text-white leading-tight">Úplně Quartet</h1>
 				</div>
-				<div class="w-20 h-20 text-white i-ic:sharp-keyboard-double-arrow-down"></div>
+				<a href="#about" class="w-20 h-20 text-white i-ic:sharp-keyboard-double-arrow-down"></a>
 			</div>
 			<Image
 				class="absolute inset-0 w-screen -z-1"
